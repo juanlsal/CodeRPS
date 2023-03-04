@@ -1,0 +1,5 @@
+C:\Users\Juan Lopez Salamanca\Desktop\ProjectRPS\RPS\RPS\obj\Debug\net6.0\RPS.csproj.AssemblyReference.cache
+C:\Users\Juan Lopez Salamanca\Desktop\ProjectRPS\RPS\RPS\obj\Debug\net6.0\RPS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Juan Lopez Salamanca\Desktop\ProjectRPS\RPS\RPS\obj\Debug\net6.0\RPS.AssemblyInfoInputs.cache
+C:\Users\Juan Lopez Salamanca\Desktop\ProjectRPS\RPS\RPS\obj\Debug\net6.0\RPS.AssemblyInfo.cs
+C:\Users\Juan Lopez Salamanca\Desktop\ProjectRPS\RPS\RPS\obj\Debug\net6.0\RPS.csproj.CoreCompileInputs.cache
