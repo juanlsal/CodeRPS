@@ -3,18 +3,15 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        Console.WriteLine("Rock Paper Scissors: The Game \nCreated by: Juan Lopez Salamanca \n\n");
-        Console.WriteLine("Player, please type your name.");
+        Console.WriteLine("Rock Paper Scissors: The Game \nCreated by: Juan Lopez Salamanca \n\nPlayer, please type your name.");
         string player1 = Console.ReadLine();
-        Console.WriteLine("\n");
-        Console.WriteLine("Welcome to RPS: The Game\n");
-        Console.WriteLine("Enter points required to win.");
+        Console.WriteLine("\nWelcome to RPS: The Game\n\nEnter points required to win.");
         int target = Convert.ToInt32(Console.ReadLine());
         int score1 = 0;
         int score2 = 0;
         while (score1 < target && score2 < target )
         {
-            Console.WriteLine("Lets play!\nremember...\nr = Rock\np = Paper\ns = Scissors\n\nSelect Attack Then Press Enter!\n");
+            Console.WriteLine("\n\nLets play!\nremember...\nr = Rock\np = Paper\ns = Scissors\n\nSelect Attack Then Press Enter!\n");
             string attack = Console.ReadLine();
             Console.WriteLine("\n");
             string enemyrock = "ROCK";
@@ -33,27 +30,21 @@ internal class Program
                         case "ROCK":
                             {
                                 Console.WriteLine("There has been a draw. \n");
-                                Console.WriteLine("Scoreboard");
-                                Console.WriteLine(player1 + " : " + score1);
-                                Console.WriteLine("Computer: " + score2 + "\n");
+                                Console.WriteLine($"Scoreboard \n{player1} : {score1} \nComputer: {score2} \n");
                                 break;
                             }
                         case "PAPER":
                             {
                                 Console.WriteLine("You have LOST. \n");
                                 score2++;
-                                Console.WriteLine("Scoreboard");
-                                Console.WriteLine(player1 + " : " + score1);
-                                Console.WriteLine("Computer: " + score2 + "\n");
+                                Console.WriteLine($"Scoreboard \n{player1} : {score1} \nComputer: {score2} \n");
                                 break;
                             }
                         case "SCISSORS":
                             {
                                 Console.WriteLine("You have WON \n");
                                 score1++;
-                                Console.WriteLine("Scoreboard");
-                                Console.WriteLine(player1 + " : " + score1);
-                                Console.WriteLine("Computer: " + score2 + "\n");
+                                Console.WriteLine($"Scoreboard \n{player1} : {score1} \nComputer: {score2} \n");
                                 break;
                             }
                     }
@@ -66,26 +57,20 @@ internal class Program
                             {
                                 Console.WriteLine("You have WON \n");
                                 score2++;
-                                Console.WriteLine("Scoreboard");
-                                Console.WriteLine(player1 + " : " + score1);
-                                Console.WriteLine("Computer: " + score2 + "\n");
+                                Console.WriteLine($"Scoreboard \n{player1} : {score1} \nComputer: {score2} \n");
                                 break;
                             }
                         case "PAPER":
                             {
                                 Console.WriteLine("There has been a DRAW. \n");
-                                Console.WriteLine("Scoreboard");
-                                Console.WriteLine(player1 + " : " + score1);
-                                Console.WriteLine("Computer: " + score2 + "\n");
+                                Console.WriteLine($"Scoreboard \n{player1} : {score1} \nComputer: {score2} \n");
                                 break;
                             }
                         case "SCISSORS":
                             {
                                 Console.WriteLine("You have LOST. \n");
                                 score1++;
-                                Console.WriteLine("Scoreboard");
-                                Console.WriteLine(player1 + " : " + score1);
-                                Console.WriteLine("Computer: " + score2 + "\n");
+                                Console.WriteLine($"Scoreboard \n{player1} : {score1} \nComputer: {score2} \n");
                                 break;
                             }
                     }
@@ -99,26 +84,20 @@ internal class Program
                                 {
                                     Console.WriteLine("You have LOST. \n");
                                     score2++;
-                                    Console.WriteLine("Scoreboard");
-                                    Console.WriteLine(player1 + " : " + score1);
-                                    Console.WriteLine("Computer: " + score2 + "\n");
+                                    Console.WriteLine($"Scoreboard \n{player1} : {score1} \nComputer: {score2} \n");
                                     break;
                                 }
                             case "PAPER":
                                 {
                                     Console.WriteLine("You have WON \n");
                                     score1++;
-                                    Console.WriteLine("Scoreboard");
-                                    Console.WriteLine(player1 + " : " + score1);
-                                    Console.WriteLine("Computer: " + score2 + "\n");
+                                    Console.WriteLine($"Scoreboard \n{player1} : {score1} \nComputer: {score2} \n");
                                     break;
                                 }
                             case "SCISSORS":
                                 {
                                     Console.WriteLine("There has been a draw. \n");
-                                    Console.WriteLine("Scoreboard");
-                                    Console.WriteLine(player1 + " : " + score1);
-                                    Console.WriteLine("Computer: " + score2 + "\n");
+                                    Console.WriteLine($"Scoreboard \n{player1} : {score1} \nComputer: {score2} \n");
                                     break;
                                 }
                         }
