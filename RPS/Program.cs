@@ -15,21 +15,6 @@ internal class Program
             Console.WriteLine("Lets play!\nremember...\nr = Rock\np = Paper\ns = Scissors\n\nSelect Attack Then Press Enter!\n");
             string attack = Console.ReadLine();
             Console.WriteLine("\n");
-            switch (attack)
-            {
-                case "r":
-                    Console.WriteLine("You have selected... ROCK");
-                    break;
-                case "p":
-                    Console.WriteLine("You have selected... PAPER");
-                    break;
-                case "s":
-                    Console.WriteLine("You have selected... SCISSORS");
-                    break;
-                default:
-                    Console.WriteLine("Try Again");
-                    break;
-            }
             string enemyrock = "ROCK";
             string enemypaper = "PAPER";
             string enemysciccors = "SCISSORS";
@@ -40,10 +25,93 @@ internal class Program
             switch (attack)
             {
                 case "r":
+                    Console.WriteLine("You have selected... ROCK");
+                    switch (Eattack)
+                    {
+                        case "ROCK":
+                            {
+                                Console.WriteLine("There has been a draw. \n");
+                                Console.WriteLine("Scoreboard");
+                                Console.WriteLine(player1 + " : " + score1);
+                                Console.WriteLine("Computer: " + score2 + "\n");
+                                break;
+                            }
+                        case "PAPER":
+                            {
+                                Console.WriteLine("You have LOST. \n");
+                                score2++;
+                                Console.WriteLine("Scoreboard");
+                                Console.WriteLine(player1 + " : " + score1);
+                                Console.WriteLine("Computer: " + score2 + "\n");
+                                break;
+                            }
+                        case "SCISSORS":
+                            {
+                                Console.WriteLine("You have WON \n");
+                                score1++;
+                                Console.WriteLine("Scoreboard");
+                                Console.WriteLine(player1 + " : " + score1);
+                                Console.WriteLine("Computer: " + score2 + "\n");
+                                break;
+                            }
+                    }
+                    break;
+                case "p":
+                    Console.WriteLine("You have selected... PAPER");
+                    switch (Eattack)
+                    {
+                        case "ROCK":
+                            {
+                                Console.WriteLine("You have WON \n");
+                                score2++;
+                                Console.WriteLine("Scoreboard");
+                                Console.WriteLine(player1 + " : " + score1);
+                                Console.WriteLine("Computer: " + score2 + "\n");
+                                break;
+                            }
+                        case "PAPER":
+                            {
+                                Console.WriteLine("There has been a DRAW. \n");
+                                Console.WriteLine("Scoreboard");
+                                Console.WriteLine(player1 + " : " + score1);
+                                Console.WriteLine("Computer: " + score2 + "\n");
+                                break;
+                            }
+                        case "SCISSORS":
+                            {
+                                Console.WriteLine("You have LOST. \n");
+                                score1++;
+                                Console.WriteLine("Scoreboard");
+                                Console.WriteLine(player1 + " : " + score1);
+                                Console.WriteLine("Computer: " + score2 + "\n");
+                                break;
+                            }
+                    }
+                    break;
+                case "s":
+                    Console.WriteLine("You have selected... SCISSORS");
                     {
                         switch (Eattack)
                         {
                             case "ROCK":
+                                {
+                                    Console.WriteLine("You have LOST. \n");
+                                    score2++;
+                                    Console.WriteLine("Scoreboard");
+                                    Console.WriteLine(player1 + " : " + score1);
+                                    Console.WriteLine("Computer: " + score2 + "\n");
+                                    break;
+                                }
+                            case "PAPER":
+                                {
+                                    Console.WriteLine("You have WON \n");
+                                    score1++;
+                                    Console.WriteLine("Scoreboard");
+                                    Console.WriteLine(player1 + " : " + score1);
+                                    Console.WriteLine("Computer: " + score2 + "\n");
+                                    break;
+                                }
+                            case "SCISSORS":
                                 {
                                     Console.WriteLine("There has been a draw. \n");
                                     Console.WriteLine("Scoreboard");
@@ -51,101 +119,13 @@ internal class Program
                                     Console.WriteLine("Computer: " + score2 + "\n");
                                     break;
                                 }
-                            case "PAPER":
-                                {
-                                    Console.WriteLine("You have LOST. \n");
-                                    score2++;
-                                    Console.WriteLine("Scoreboard");
-                                    Console.WriteLine(player1 + " : " + score1);
-                                    Console.WriteLine("Computer: " + score2 + "\n");
-                                    break;
-                                }
-                            case "SCISSORS":
-                                {
-                                    Console.WriteLine("You have WON \n");
-                                    score1++;
-                                    Console.WriteLine("Scoreboard");
-                                    Console.WriteLine(player1 + " : " + score1);
-                                    Console.WriteLine("Computer: " + score2 + "\n");
-                                    break;
-                                }
                         }
                         break;
-                    }
-                case "p":
-                    {
-                        switch (Eattack)
-                        {
-                            case "ROCK":
-                                {
-                                    Console.WriteLine("You have WON \n");
-                                    score2++;
-                                    Console.WriteLine("Scoreboard");
-                                    Console.WriteLine(player1 + " : " + score1);
-                                    Console.WriteLine("Computer: " + score2 + "\n");
-                                    break;
-                                }
-                            case "PAPER":
-                                {
-                                    Console.WriteLine("There has been a DRAW. \n");
-                                    Console.WriteLine("Scoreboard");
-                                    Console.WriteLine(player1 + " : " + score1);
-                                    Console.WriteLine("Computer: " + score2 + "\n");
-                                    break;
-                                }
-                            case "SCISSORS":
-                                {
-                                    Console.WriteLine("You have LOST. \n");
-                                    score1++;
-                                    Console.WriteLine("Scoreboard");
-                                    Console.WriteLine(player1 + " : " + score1);
-                                    Console.WriteLine("Computer: " + score2 + "\n");
-                                    break;
-                                }
-                        }
-                        break;
-                    }
-                case "s":
-                    {
-                        {
-                            switch (Eattack)
-                            {
-                                case "ROCK":
-                                    {
-                                        Console.WriteLine("You have LOST. \n");
-                                        score2++;
-                                        Console.WriteLine("Scoreboard");
-                                        Console.WriteLine(player1 + " : " + score1);
-                                        Console.WriteLine("Computer: " + score2 + "\n");
-                                        break;
-                                    }
-                                case "PAPER":
-                                    {
-                                        Console.WriteLine("You have WON \n");
-                                        score1++;
-                                        Console.WriteLine("Scoreboard");
-                                        Console.WriteLine(player1 + " : " + score1);
-                                        Console.WriteLine("Computer: " + score2 + "\n");
-                                        break;
-                                    }
-                                case "SCISSORS":
-                                    {
-                                        Console.WriteLine("There has been a draw. \n");
-                                        Console.WriteLine("Scoreboard");
-                                        Console.WriteLine(player1 + " : " + score1);
-                                        Console.WriteLine("Computer: " + score2 + "\n");
-                                        break;
-                                    }
-                            }
-                            break;
-                        }
                     }
                 default:
+                    Console.WriteLine("Try Again");
                     break;
             }
         }
     }
 }
-
-
-
