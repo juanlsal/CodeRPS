@@ -17,8 +17,7 @@ internal class Program
             Console.WriteLine("Lets play!\nremember...\nr = Rock\np = Paper\ns = Scissors\n\nSelect Attack Then Press Enter!\n");
             string attack = Console.ReadLine();
             Console.WriteLine("\n");
-            string enemyrock = "RO" +
-                "CK";
+            string enemyrock = "ROCK";
             string enemypaper = "PAPER";
             string enemysciccors = "SCISSORS";
             string[] selectableStrings = new string[3] { enemyrock, enemypaper, enemysciccors };
