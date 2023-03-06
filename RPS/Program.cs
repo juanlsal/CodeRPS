@@ -8,14 +8,17 @@ internal class Program
         string player1 = Console.ReadLine();
         Console.WriteLine("\n");
         Console.WriteLine("Welcome to RPS: The Game\n");
+        Console.WriteLine("Enter points required to win.");
+        int target = Convert.ToInt32(Console.ReadLine());
         int score1 = 0;
         int score2 = 0;
-        while (score1 < 5 || score2 < 5)
+        while (score1 < target && score2 < target )
         {
             Console.WriteLine("Lets play!\nremember...\nr = Rock\np = Paper\ns = Scissors\n\nSelect Attack Then Press Enter!\n");
             string attack = Console.ReadLine();
             Console.WriteLine("\n");
-            string enemyrock = "ROCK";
+            string enemyrock = "RO" +
+                "CK";
             string enemypaper = "PAPER";
             string enemysciccors = "SCISSORS";
             string[] selectableStrings = new string[3] { enemyrock, enemypaper, enemysciccors };
